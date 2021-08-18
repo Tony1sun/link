@@ -7,12 +7,15 @@ import (
 	"code.oldboyedu.com/link"
 )
 
-var exampleHtml = `<html>
+var exampleHtml = `
+<html>
 <body>
   <h1>Hello!</h1>
   <a href="/other-page">A link to another page</a>
+  <a href="/page-two">A link to another page</a>
 </body>
-</html>`
+</html>
+`
 
 func main() {
 	r := strings.NewReader(exampleHtml)
